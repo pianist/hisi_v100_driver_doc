@@ -1,0 +1,4 @@
+Called from SDK HI_MPI_VB_SetConf()
+
+ioctrl() accepts as a parameter VB_CONF_S, just memcpy it and increase size +2048k
+
