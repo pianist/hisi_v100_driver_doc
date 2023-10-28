@@ -6,7 +6,7 @@
 | `HI_MPI_SYS_GetVersion`       |           | no kernel call                        |                                                       |
 | `HI_MPI_SYS_GetChipId`        |           | [`0x80045910`](call_0x80045910.md)    |                                                       |
 | `HI_MPI_SYS_Exit`             |           |                                       |                                                       |
-| `HI_MPI_SYS_SetConf`          |           | [`0x40045902`](call_0x40045902.md)    | called `HI_MPI_SYS_GetConf_0`                         |
+| `HI_MPI_SYS_SetConf`          |           | [`0x40045902`](call_0x40045902.md)    | named in lib as `HI_MPI_SYS_GetConf_0`                |
 | `HI_MPI_SYS_GetConf`          |           | [`0x80045903`](call_0x80045903.md)    |                                                       |
 | `HI_MPI_SYS_Init`             |           | ...loads of calls...                  |                                                       |
 | `HI_MPI_SYS_Bind`             |           | [`0x40185907`](call_0x40185907.md)    | Bind data source and data receiver                    |
