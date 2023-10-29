@@ -1,6 +1,23 @@
 `HI_MPI_AO_*` SDK API and kernel devide /dev/ao
 ===============================================
 
+`hi3518_ao.so` init and unload
+------------------------------
+
+From IDA decompilation (`init_module()`):
+* `CMPI_CreateProc("ao", AOProcShow, 0);`
+* `CMPI_RegisterDevice(char*)` with ptr to buffer with "ao" string (device name?)
+* `CMPI_RegisterMod(*pstAoModule)`, pstAoModule is a structure
+
+Unload process:
+* `CMPI_UnRegisterMod(0x16);`
+* `CMPI_UnRegisterDevice(char*)`, see init
+* `CMPI_RemoveProc("ao");`
+
+`AOProcShow`
+------------
+
+Good proc with a lot os useful info for decompilation.
 
 `HI_MPI_AO_SetPubAttr`
 ----------------------
